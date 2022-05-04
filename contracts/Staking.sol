@@ -60,7 +60,7 @@ contract Staking {
         s_totalSupply);
   }
 
-  function earned(address _account) private view returns (uint256) {
+  function earned(address _account) public view returns (uint256) {
     uint256 currentBalance = s_balances[_account];
 
     //how much they have been paid already
